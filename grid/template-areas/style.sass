@@ -1,0 +1,40 @@
+@import './_variables'
+
+.container
+    width: 90%
+    margin: 0 auto
+    height: 100vh
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(9, 200px)
+    grid-template-areas: "box1 box2 box2" "box1 box3 box3" "box4 box4 box6" "box5 box5 box6" "box7 box8 box8" "box7 box9 box9"
+    grid-gap: .6rem
+    column-gap: .6rem
+.container--box__1
+    grid-area: box1 
+    background-color: $colorOne
+.container--box__2
+    grid-area: box2 
+    background-color: $colorTwo
+.container--box__3
+    grid-area: box3
+    background-color: $colorThree
+.container--box__4
+    grid-area: box4
+    background-color: $colorThree
+.container--box__5
+    grid-area: box5
+    background-color: $colorOne
+.container--box__6
+    grid-area: box6
+    background-color: $colorTwo
+.container--box__7
+    grid-area: box7 
+    background-color: $colorTwo
+.container--box__8
+    grid-area: box8
+    background-color: $colorThree
+.container--box__9
+    grid-area: box9
+    background-color: $colorOne
+
